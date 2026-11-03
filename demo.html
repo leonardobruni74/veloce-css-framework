@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veloce Framework - Documentazione Completa</title>
+  <link rel="stylesheet" href="fast.css">
+  <style>
+    /* Stili specifici per la documentazione */
+    .sp-sezione-demo {
+      margin-bottom: var(--spacing-4xl);
+    }
+    
+    .sp-codice-esempio {
+      background-color: var(--color-gray-dark);
+      color: var(--color-gray-lighter);
+      padding: var(--spacing-lg);
+      border-radius: var(--radius-md);
+      overflow-x: auto;
+      font-family: var(--font-code);
+      font-size: 0.875rem;
+      line-height: 1.6;
+      margin-top: var(--spacing-md);
+    }
+    
+    .sp-header-hero {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+      color: var(--color-white);
+      padding: var(--spacing-4xl) 0;
+      text-align: center;
+    }
+    
+    .sp-palette-colore {
+      width: 100%;
+      height: 80px;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: white;
+      margin-bottom: var(--spacing-md);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="sp-navbar sp-navbar-sticky sp-bg-white">
+    <div class="sp-container">
+      <div class="sp-flex sp-justify-between sp-items-center">
+        <a href="#" class="sp-navbar-brand">
+          <span class="sp-icon sp-icon-md sp-icon-home" style="color: var(--color-primary);"></span>
+          Veloce
+        </a>
+        <ul class="sp-navbar-menu">
+          <li><a href="#colori" class="sp-navbar-link">Colori</a></li>
+          <li><a href="#tipografia" class="sp-navbar-link">Tipografia</a></li>
+          <li><a href="#bottoni" class="sp-navbar-link">Bottoni</a></li>
+          <li><a href="#carte" class="sp-navbar-link">Componenti</a></li>
+          <li><a href="#layout" class="sp-navbar-link">Layout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO HEADER -->
+  <header class="sp-header-hero">
+    <div class="sp-container">
+      <h1 class="sp-text-6xl sp-font-bold sp-mb-md sp-animate-fade-in">
+        Veloce Framework
+      </h1>
+      <p class="sp-text-2xl sp-mb-xl sp-animate-slide-up">
+        Un framework CSS italiano, veloce e moderno - 100% CSS Puro
+      </p>
+      <div class="sp-btn-group sp-justify-center">
+        <a href="#colori" class="sp-btn sp-btn-lg sp-bg-white sp-text-primary">
+          Inizia Subito
+        </a>
+        <a href="#utilities" class="sp-btn sp-btn-lg sp-btn-outline sp-bg-transparent sp-border" style="border-color: white; color: white;">
+          Documentazione
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVBAR RESPONSIVE HAMBURGER -->
+  <section id="navbar-responsive" class="sp-sezione-demo sp-py-3xl sp-bg-gray-lighter">
+    <div class="sp-container">
+      <h2 class="sp-h2 sp-mb-lg">Menu Responsive (Hamburger)</h2>
+
+      <div class="sp-card sp-mb-xl">
+        <h3 class="sp-h3 sp-mb-md">Esempio 1: Menu Base</h3>
+        <nav class="sp-navbar sp-navbar-sticky sp-bg-white sp-border sp-rounded-md">
+          <a href="#" class="sp-navbar-brand">Veloce</a>
+          <input class="sp-nav-toggle" type="checkbox" id="nav-toggle-1">
+          <label class="sp-nav-toggle-label" for="nav-toggle-1" aria-label="Apri menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <ul class="sp-navbar-menu">
+            <li><a href="#colori" class="sp-navbar-link">Colori</a></li>
+            <li><a href="#tipografia" class="sp-navbar-link">Tipografia</a></li>
+            <li><a href="#bottoni" class="sp-navbar-link">Bottoni</a></li>
+            <li><a href="#carte" class="sp-navbar-link">Componenti</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="sp-card">
+        <h3 class="sp-h3 sp-mb-md">Esempio 2: Menu Full Width</h3>
+        <nav class="sp-navbar sp-navbar-sticky sp-navbar-dark sp-bg-gray-dark sp-rounded-md">
+          <a href="#" class="sp-navbar-brand sp-text-white">Veloce</a>
+          <input class="sp-nav-toggle" type="checkbox" id="nav-toggle-2">
+          <label class="sp-nav-toggle-label sp-nav-toggle-label--spin" for="nav-toggle-2" aria-label="Apri menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <ul class="sp-navbar-menu sp-navbar-menu--full">
+            <li><a href="#layout" class="sp-navbar-link">Layout</a></li>
+            <li><a href="#icone" class="sp-navbar-link">Icone</a></li>
+            <li><a href="#animazioni" class="sp-navbar-link">Animazioni</a></li>
+            <li><a href="#utilities" class="sp-navbar-link">Utilities</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARATTERISTICHE -->
+  <section class="sp-py-4xl sp-bg-gray-lighter">
+    <div class="sp-container">
+      <h2 class="sp-h2 sp-text-center sp-mb-2xl">Perché Scegliere Veloce?</h2>
+      <div class="sp-grid sp-grid-1 sp-md:grid-3 sp-gap-lg">
+        
+        <div class="sp-card sp-hover-lift sp-animate-scale-in">
+          <div class="sp-text-center sp-mb-md">
+            <span class="sp-icon sp-icon-lg sp-icon-check sp-text-success"></span>
+          </div>
+          <h3 class="sp-card-title sp-text-center">100% CSS Puro</h3>
+          <p class="sp-text-center">Nessuna dipendenza JavaScript. Solo CSS pulito e performante per il massimo controllo.</p>
+        </div>
+
+        <div class="sp-card sp-hover-lift sp-animate-scale-in" style="animation-delay: 0.1s;">
+          <div class="sp-text-center sp-mb-md">
+            <span class="sp-icon sp-icon-lg sp-icon-star sp-text-secondary"></span>
+          </div>
+          <h3 class="sp-card-title sp-text-center">Semantico e Italiano</h3>
+          <p class="sp-text-center">Classi in italiano chiare e semantiche. Naming coerente e intuitivo per sviluppatori italiani.</p>
+        </div>
+
+        <div class="sp-card sp-hover-lift sp-animate-scale-in" style="animation-delay: 0.2s;">
+          <div class="sp-text-center sp-mb-md">
+            <span class="sp-icon sp-icon-lg sp-icon-settings sp-text-primary"></span>
+          </div>
+          <h3 class="sp-card-title sp-text-center">Altamente Compatibile</h3>
+          <p class="sp-text-center">Supporto per tutti i browser moderni. CSS standard senza proprietà sperimentali.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SEZIONE COLORI -->
+  <section id="colori" class="sp-sezione-demo sp-py-3xl">
+    <div class="sp-container">
+      <h2 class="sp-h2 sp-mb-lg">Palette Colori</h2>
+      <p class="sp-text-lg sp-mb-xl sp-text-gray">
+        Veloce include una palette di colori completa e personalizzabile tramite CSS variables.
+      </p>
+
+      <h3 class="sp-h3 sp-mb-md">Colori Primari</h3>
+      <div class="sp-grid sp-grid-2 sp-md:grid-4 sp-gap-md sp-mb-2xl">
+        <div>
+          <div class="sp-palette-colore sp-bg-primary">Azzurro</div>
+          <code class="sp-text-sm">var(--color-primary)</code>
+        </div>
+        <div>
+          <div class="sp-palette-colore sp-bg-secondary">Arancio</div>
+          <code class="sp-text-sm">var(--color-secondary)</code>
+        </div>
+        <div>
+          <div class="sp-palette-colore sp-bg-success">Verde</div>
+          <code class="sp-text-sm">var(--color-success)</code>
+        </div>
+        <div>
+          <div class="sp-palette-colore sp-bg-danger">Rosso</div>
+          <code class="sp-text-sm">var(--color-danger)</code>
+        </div>
+        <div>
+          <div class="sp-palette-colore sp-bg-info">Viola</div>
+          <code class="sp-text-sm">var(--color-info)</code>
+        </div>
+        <div>
+          <div class="sp-palette-colore" style="background-color: var(--color-pink);">Rosa</div>
+          <code class="sp-text-sm">var(--color-pink)</code>
+        </div>
+        <div>
+          <div class="sp-palette-colore sp-bg-warning" style="color: var(--color-black);">Giallo</div>
+          <code class="sp-text-sm">var(--color-warning)</code>
+        </div>
+        <div>
+          <div class="sp-palette-colore" style="background-color: var(--color-primary-dark);">Blu Scuro</div>
+          <code class="sp-text-sm">var(--color-primary-dark)</code>
+        </div>
+      </div>
+
+      <h3 class="sp-h3 sp-mb-md">Scala Grigi</h3>
+      <div class="sp-grid sp-grid-2 sp-md:grid-4 sp-lg:grid-5 sp-gap-md sp-mb-2xl">
+        <div>
+          <div class="sp-palette-colore sp-bg-black">Nero</div>
+        </div>
+        <div>
+          <div class="sp-palette-colore sp-bg-gray-dark">Grigio Scuro</div>
+        </div>
+        <div>
+          <div class="sp-palette-colore sp-bg-gray">Grigio Medio</div>
+        </div>
+        <div>
+          <div class="sp-palette-colore sp-bg-gray-light" style="color: var(--color-black);">Grigio Chiaro</div>
+        </div>
+        <div>
+          <div class="sp-palette-colore sp-bg-gray-lighter" style="color: var(--color-black);">Grigio Pallido</div>
+        </div>
+      </div>
+
+      <h3 class="sp-h3 sp-mb-md">Gradienti</h3>
+      <div class="sp-grid sp-grid-1 sp-md:grid-4 sp-gap-md">
+        <div class="sp-palette-colore sp-gradient-primary">Azzurro</div>
+        <div class="sp-palette-colore sp-gradient-sunset">Tramonto</div>
+        <div class="sp-palette-colore sp-gradient-nature">Natura</div>
+        <div class="sp-palette-colore sp-gradient-purple">Violetto</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEZIONE TIPOGRAFIA -->
+  <section id="tipografia" class="sp-sezione-demo sp-py-3xl sp-bg-gray-lighter">
+    <div class="sp-container">
+      <h2 class="sp-h2 sp-mb-lg">Tipografia</h2>
+      
+      <div class="sp-card sp-mb-xl">
+        <h3 class="sp-h3 sp-mb-md">Titoli</h3>
+        <div class="sp-mb-md">
+          <h1 class="sp-h1">Titolo 1 - Heading principale</h1>
+          <h2 class="sp-h2">Titolo 2 - Sezione principale</h2>
+          <h3 class="sp-h3">Titolo 3 - Sottosezione</h3>
+          <h4 class="sp-h4">Titolo 4 - Sotto-sottosezione</h4>
+        </div>
+      </div>
+
+      <div class="sp-card sp-mb-xl">
+        <h3 class="sp-h3 sp-mb-md">Dimensioni Testo</h3>
+        <p class="sp-text-xs sp-mb-sm">Testo Extra Small - 0.75rem</p>
+        <p class="sp-text-sm sp-mb-sm">Testo Small - 0.875rem</p>
+        <p class="sp-text-base sp-mb-sm">Testo Base - 1rem (default)</p>
+        <p class="sp-text-lg sp-mb-sm">Testo Large - 1.125rem</p>
+        <p class="sp-text-xl sp-mb-sm">Testo XL - 1.25rem</p>
+        <p class="sp-text-2xl sp-mb-sm">Testo 2XL - 1.5rem</p>
+        <p class="sp-text-3xl sp-mb-sm">Testo 3XL - 1.875rem</p>
+        <p class="sp-text-4xl sp-mb-sm">Testo 4XL - 2.25rem</p>
+        <p class="sp-text-5xl">Testo 5XL - 3rem</p>
+      </div>
+
+      <div class="sp-card sp-mb-xl">
+        <h3 class="sp-h3 sp-mb-md">Peso Font</h3>
+        <p class="sp-font-thin sp-mb-sm">Font Sottile (200)</p>
+        <p class="sp-font-light sp-mb-sm">Font Leggero (300)</p>
+        <p class="sp-font-normal sp-mb-sm">Font Normale (400)</p>
+        <p class="sp-font-medium sp-mb-sm">Font Medio (500)</p>
+        <p class="sp-font-semibold sp-mb-sm">Font Semibold (600)</p>
+        <p class="sp-font-bold sp-mb-sm">Font Grassetto (700)</p>
+        <p class="sp-font-extrabold">Font Extra Bold (800)</p>
+      </div>
+
+      <div class="sp-card">
+        <h3 class="sp-h3 sp-mb-md">Allineamento e Trasformazione</h3>
+        <p class="sp-text-left sp-mb-sm">Testo allineato a sinistra</p>
+        <p class="sp-text-center sp-mb-sm">Testo centrato</p>
+        <p class="sp-text-right sp-mb-sm">Testo allineato a destra</p>
+        <p class="sp-uppercase sp-mb-sm">testo tutto maiuscolo</p>
+        <p class="sp-lowercase sp-mb-sm">TESTO TUTTO MINUSCOLO</p>
+        <p class="sp-capitalize">testo capitalizzato</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEZIONE BOTTONI -->
+  <section id="bottoni" class="sp-sezione-demo sp-py-3xl">
+    <div class="sp-container">
+      <h2 class="sp-h2 sp-mb-lg">Bottoni</h2>
+      
+      <div class="sp-card sp-mb-xl">
+        <h3 class="sp-h3 sp-mb-md">Bottoni Colorati</h3>
+        <div class="sp-btn-group">
+          <button class="sp-btn sp-btn-primary">Azzurro</button>
+          <button class="sp-btn sp-btn-secondary">Arancio</button>
+          <button class="sp-btn sp-btn-success">Verde</button>
+          <button class="sp-btn sp-btn-danger">Rosso</button>
+          <button class="sp-btn sp-btn-info">Viola</button>
+          <button class="sp-btn sp-btn-dark">Scuro</button>
+        </div>
+      </div>
+
+      <div class="sp-card sp-mb-xl">
+        <h3 class="sp-h3 sp-mb-md">Bottoni Outline</h3>
+        <div class="sp-btn-group">
+          <button class="sp-btn sp-btn-outline">Azzurro Outline</button>
+          <button class="sp-btn sp-btn-outline-secondary">Arancio Outline</button>
+          <button class="sp-btn sp-btn-outline-success">Verde Outline</button>
+          <button class="sp-btn sp-btn-outline-danger">Rosso Outline</button>
+        </div>
+      </div>
+
+      <div class="sp-card sp-mb-xl">
+        <h3 class="sp-h3 sp-mb-md">Dimensioni Bottoni</h3>
+        <div class="sp-btn-group sp-items-center">
+          <button class="sp-btn sp-btn-primary sp-btn-sm">Piccolo</button>
+          <button class="sp-btn sp-btn-primary">Normale</button>
+          <button class="sp-btn sp-btn-primary sp-btn-lg">Grande</button>
+          <button class="sp-btn sp-btn-primary sp-btn-xl">Enorme</button>
+        </div>
+      </div>
+
+      <div class="sp-card sp-mb-xl">
+        <h3 class="sp-h3 sp-mb-md">Bottoni Blocco</h3>
+        <button class="sp-btn sp-btn-primary sp-btn-block sp-mb-sm">Bottone Blocco 100%</button>
+        <button class="sp-btn sp-btn-outline sp-btn-block">Outline Blocco</button>
+      </div>
+
+      <div class="sp-card">
+        <h3 class="sp-h3 sp-mb-md">Stati Bottone</h3>
+        <div class="sp-btn-group">
+          <button class="sp-btn sp-btn-primary">Normale</button>
+          <button class="sp-btn sp-btn-primary" disabled>Disabilitato</button>
+          <button class="sp-btn sp-btn-outline">Outline Normale</button>
+          <button class="sp-btn sp-btn-outline" disabled>Outline Disabilitato</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEZIONE CARTE -->
+  <section id="carte" class="sp-sezione-demo sp-py-3xl sp-bg-gray-lighter">
+    <div class="sp-container">
+      <h2 class="sp-h2 sp-mb-lg">Carte (Cards)</h2>
+      
+      <div class="sp-grid sp-grid-1 sp-md:grid-3 sp-gap-lg sp-mb-xl">
+        <div class="sp-card">
+          <h3 class="sp-card-title">Carta Base</h3>
+          <p>Questa è una carta base con effetto hover. Le carte includono automaticamente ombra e animazione al passaggio del mouse.</p>
+          <button class="sp-btn sp-btn-primary sp-mt-md">Azione</button>
+        </div>
+
+        <div class="sp-card sp-card-bordered">
+          <h3 class="sp-card-title">Carta Bordata</h3>
+          <p>Questa carta ha un bordo invece dell'ombra. Il bordo cambia colore al passaggio del mouse.</p>
+          <button class="sp-btn sp-btn-outline sp-mt-md">Scopri</button>
+        </div>
+
+        <div class="sp-card sp-card-primary">
+          <h3 class="sp-card-title">Carta Colorata</h3>
+          <p>Le carte possono avere sfondi colorati con testo bianco per maggiore impatto visivo.</p>
+          <button class="sp-btn sp-bg-white sp-text-primary sp-mt-md">Dettagli</button>
+        </div>
+      </div>
+
+      <div class="sp-card sp-mb-xl">
+        <h3 class="sp-h3 sp-mb-md">Carta con Struttura Completa</h3>
+        <div class="sp-card">
+          <div class="sp-card-header">
+            <h4 class="sp-card-title sp-mb-xs">Intestazione Carta</h4>
+            <p class="sp-card-subtitle sp-mb-0">Sottotitolo descrittivo della carta</p>
+          </div>
+          <div class="sp-card-body">
+            <p>Questo è il corpo della carta. Può contenere qualsiasi contenuto, incluse immagini, testo, liste e molto altro.</p>
+            <ul class="sp-mt-md">
+              <li>Caratteristica 1</li>
+              <li>Caratteristica 2</li>
+              <li>Caratteristica 3</li>
+            </ul>
+          </div>
+          <div class="sp-card-footer">
+            <div class="sp-flex sp-justify-between sp-items-center">
+              <span class="sp-text-sm sp-text-gray">Ultimo aggiornamento: Oggi</span>
+              <button class="sp-btn sp-btn-sm sp-btn-primary">Visualizza</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="sp-h3 sp-mb-md">Carte con Immagini</h3>
+      <div class="sp-grid sp-grid-1 sp-md:grid-3 sp-gap-lg">
+        <div class="sp-card sp-p-0">
+          <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 200px; border-radius: var(--radius-lg) var(--radius-lg) 0 0;"></div>
+          <div class="sp-p-lg">
+            <h4 class="sp-card-title">Prodotto 1</h4>
+            <p class="sp-mb-md">Descrizione breve del prodotto con caratteristiche principali.</p>
+            <div class="sp-flex sp-justify-between sp-items-center">
+              <span class="sp-text-2xl sp-font-bold sp-text-primary">€99</span>
+              <button class="sp-btn sp-btn-sm sp-btn-primary">Acquista</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="sp-card sp-p-0">
+          <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); height: 200px; border-radius: var(--radius-lg) var(--radius-lg) 0 0;"></div>
+          <div class="sp-p-lg">
+            <h4 class="sp-card-title">Prodotto 2</h4>
+            <p class="sp-mb-md">Descrizione breve del prodotto con caratteristiche principali.</p>
+            <div class="sp-flex sp-justify-between sp-items-center">
+              <span class="sp-text-2xl sp-font-bold sp-text-secondary">€149</span>
+              <button class="sp-btn sp-btn-sm sp-btn-secondary">Acquista</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="sp-card sp-p-0">
+          <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); height: 200px; border-radius: var(--radius-lg) var(--radius-lg) 0 0;"></div>
+          <div class="sp-p-lg">
+            <h4 class="sp-card-title">Prodotto 3</h4>
+            <p class="sp-mb-md">Descrizione breve del prodotto con caratteristiche principali.</p>
+            <div class="sp-flex sp-justify-between sp-items-center">
+              <span class="sp-text-2xl sp-font-bold sp-text-success">€199</span>
+              <button class="sp-btn sp-btn-sm sp-btn-success">Acquista</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEZIONE BADGE & ALERT -->
+  <section id="badge-alert" class="sp-sezione-demo sp-py-3xl">
+    <div class="sp-container">
+      <h2 class="sp-h2 sp-mb-lg">Badge & Avvisi</h2>
+      
+      <div class="sp-card sp-mb-xl">
+        <h3 class="sp-h3 sp-mb-md">Badge</h3>
+        <div class="sp-flex sp-flex-wrap sp-gap-sm sp-items-center">
+          <span class="sp-badge sp-badge-primary">Azzurro</span>
+          <span class="sp-badge sp-badge-secondary">Arancio</span>
+          <span class="sp-badge sp-badge-success">Verde</span>
+          <span class="sp-badge sp-badge-danger">Rosso</span>
+          <span class="sp-badge sp-badge-info">Viola</span>
+          <span class="sp-badge sp-badge-gray">Grigio</span>
+          <span class="sp-badge sp-badge-outline">Outline</span>
+        </div>
+        <div class="sp-mt-lg">
+          <h4 class="sp-font-semibold sp-mb-sm">Esempio Utilizzo:</h4>
+          <p>Nuovo Messaggio <span class="sp-badge sp-badge-danger">5</span></p>
+          <p>Stato: <span class="sp-badge sp-badge-success">Attivo</span></p>
+          <p>Versione: <span class="sp-badge sp-badge-outline">v2.0.0</span></p>
+        </div>
+      </div>
+
+      <div class="sp-card">
+        <h3 class="sp-h3 sp-mb-md">Avvisi</h3>
+        
+        <div class="sp-alert sp-alert-success">
+          <div class="sp-alert-title">Operazione Completata!</div>
+          <p class="sp-mb-0">I tuoi dati sono stati salvati correttamente.</p>
+        </div>
+
+        <div class="sp-alert sp-alert-info">
+          <div class="sp-alert-title">Informazione</div>
+          <p class="sp-mb-0">Questa è una notifica informativa per l'utente.</p>
+        </div>
+
+        <div class="sp-alert sp-alert-warning">
+          <div class="sp-alert-title">Attenzione</div>
+          <p class="sp-mb-0">Si prega di verificare i dati inseriti prima di procedere.</p>
+        </div>
+
+        <div class="sp-alert sp-alert-danger">
+          <div class="sp-alert-title">Errore</div>
+          <p class="sp-mb-0">Si è verificato un errore durante l'operazione. Riprova più tardi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEZIONE FORM -->
+  <section id="form" class="sp-sezione-demo sp-py-3xl sp-bg-gray-lighter">
+    <div class="sp-container">
+      <h2 class="sp-h2 sp-mb-lg">Moduli (Forms)</h2>
+      
+      <div class="sp-card">
+        <h3 class="sp-h3 sp-mb-lg">Esempio Form Completo</h3>
+        
+        <form>
+          <div class="sp-grid sp-grid-1 sp-md:grid-2 sp-gap-md">
+            <div class="sp-form-group">
+              <label class="sp-form-label" for="nome-demo">Nome</label>
+              <input id="nome-demo" type="text" class="sp-form-control" placeholder="Inserisci il tuo nome">
+            </div>
+
+            <div class="sp-form-group">
+              <label class="sp-form-label" for="cognome-demo">Cognome</label>
+              <input id="cognome-demo" type="text" class="sp-form-control" placeholder="Inserisci il tuo cognome">
+            </div>
+          </div>
+
+          <div class="sp-form-group">
+            <label class="sp-form-label" for="email-demo">Email</label>
+            <input id="email-demo" type="email" class="sp-form-control" placeholder="esempio@email.com">
+            <span class="sp-form-help">Non condivideremo mai la tua email con altri.</span>
+          </div>
+
+          <div class="sp-form-group">
+            <label class="sp-form-label" for="password-demo">Password</label>
+            <input id="password-demo" type="password" class="sp-form-control" placeholder="Inserisci password sicura">
+          </div>
+
+          <div class="sp-form-group">
+            <label class="sp-form-label" for="paese-demo">Paese</label>
+            <select id="paese-demo" class="sp-form-control">
+              <option>Seleziona un paese</option>
+              <option>Italia</option>
+              <option>Francia</option>
+              <option>Germania</option>
+              <option>Spagna</option>
+            </select>
+          </div>
+
+          <div class="sp-form-group">
+            <label class="sp-form-label" for="messaggio-demo">Messaggio</label>
+            <textarea id="messaggio-demo" class="sp-form-control" placeholder="Scrivi il tuo messaggio qui..."></textarea>
+          </div>
+
+          <div class="sp-form-group">
+            <label class="sp-form-check-label">
+              <input type="checkbox" class="sp-form-check">
+              <span>Accetto i termini e condizioni</span>
+            </label>
+          </div>
+
+          <div class="sp-form-group">
+            <label class="sp-form-label">Genere</label>
+            <label class="sp-form-radio-label sp-mb-sm sp-block">
+              <input type="radio" name="genere" class="sp-form-radio">
+              <span>Maschile</span>
+            </label>
+            <label class="sp-form-radio-label sp-mb-sm sp-block">
+              <input type="radio" name="genere" class="sp-form-radio">
+              <span>Femminile</span>
+            </label>
+            <label class="sp-form-radio-label sp-block">
+              <input type="radio" name="genere" class="sp-form-radio">
+              <span>Altro</span>
+            </label>
+          </div>
+
+          <div class="sp-btn-group">
+            <button type="submit" class="sp-btn sp-btn-primary">Invia</button>
+            <button type="reset" class="sp-btn sp-btn-outline">Reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEZIONE TABELLE -->
+  <section id="tabelle" class="sp-sezione-demo sp-py-3xl">
+    <div class="sp-container">
+      <h2 class="sp-h2 sp-mb-lg">Tabelle</h2>
+      
+      <div class="sp-card sp-mb-xl">
+        <h3 class="sp-h3 sp-mb-md">Tabella Base</h3>
+        <table class="sp-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Nome</th>
+              <th>Email</th>
+              <th>Ruolo</th>
+              <th>Stato</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Mario Rossi</td>
+              <td>mario@example.com</td>
+              <td>Amministratore</td>
+              <td><span class="sp-badge sp-badge-success">Attivo</span></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Giulia Bianchi</td>
+              <td>giulia@example.com</td>
+              <td>Editor</td>
+              <td><span class="sp-badge sp-badge-success">Attivo</span></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Luca Verdi</td>
+              <td>luca@example.com</td>
+              <td>Utente</td>
+              <td><span class="sp-badge sp-badge-gray">Inattivo</span></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Anna Neri</td>
+              <td>anna@example.com</td>
+              <td>Editor</td>
+              <td><span class="sp-badge sp-badge-success">Attivo</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="sp-card sp-mb-xl">
+        <h3 class="sp-h3 sp-mb-md">Tabella Striata</h3>
+        <table class="sp-table sp-table-striped">
+          <thead>
+            <tr>
+              <th>Prodotto</th>
+              <th>Prezzo</th>
+              <th>Quantità</th>
+              <th>Totale</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Laptop Pro</td>
+              <td>€1,299</td>
+              <td>2</td>
+              <td>€2,598</td>
+            </tr>
+            <tr>
+              <td>Mouse Wireless</td>
+              <td>€49</td>
+              <td>5</td>
+              <td>€245</td>
+            </tr>
+            <tr>
+              <td>Tastiera Meccanica</td>
+              <td>€129</td>
+              <td>3</td>
+              <td>€387</td>
+            </tr>
+            <tr>
+              <td>Monitor 27"</td>
+              <td>€399</td>
+              <td>1</td>
+              <td>€399</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="sp-card">
+        <h3 class="sp-h3 sp-mb-md">Tabella Bordata</h3>
+        <table class="sp-table sp-table-bordered">
+          <thead>
+            <tr>
+              <th>Data</th>
+              <th>Evento</th>
+              <th>Luogo</th>
+              <th>Partecipanti</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>15 Gen 2026</td>
+              <td>Workshop CSS</td>
+              <td>Milano</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>22 Gen 2026</td>
+              <td>Conferenza Web</td>
+              <td>Roma</td>
+              <td>200</td>
+            </tr>
+            <tr>
+              <td>05 Feb 2026</td>
+              <td>Meetup Frontend</td>
+              <td>Torino</td>
+              <td>75</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEZIONE NAVIGAZIONE -->
+  <section id="navigazione" class="sp-sezione-demo sp-py-3xl sp-bg-gray-lighter">
+    <div class="sp-container">
+      <h2 class="sp-h2 sp-mb-lg">Componenti di Navigazione</h2>
+      
+      <div class="sp-card sp-mb-xl">
+        <h3 class="sp-h3 sp-mb-md">Navbar Scura</h3>
+        <nav class="sp-navbar sp-navbar-dark sp-rounded-md">
+          <a href="#" class="sp-navbar-brand">Brand</a>
+          <ul class="sp-navbar-menu">
+            <li><a href="#" class="sp-navbar-link">Home</a></li>
+            <li><a href="#" class="sp-navbar-link">Prodotti</a></li>
+            <li><a href="#" class="sp-navbar-link">Servizi</a></li>
+            <li><a href="#" class="sp-navbar-link">Contatti</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="sp-card sp-mb-xl">
+        <h3 class="sp-h3 sp-mb-md">Breadcrumb</h3>
+        <ul class="sp-breadcrumb">
+          <li class="sp-breadcrumb-item"><a href="#" class="sp-breadcrumb-link">Home</a></li>
+          <li class="sp-breadcrumb-item"><a href="#" class="sp-breadcrumb-link">Prodotti</a></li>
+          <li class="sp-breadcrumb-item"><a href="#" class="sp-breadcrumb-link">Elettronica</a></li>
+          <li class="sp-breadcrumb-item sp-active">Laptop</li>
+        </ul>
+      </div>
+
+      <div class="sp-card sp-mb-xl">
+        <h3 class="sp-h3 sp-mb-md">Paginazione</h3>
+        <ul class="sp-pagination">
+          <li class="sp-pagination-item sp-disabled">
+            <a href="#" class="sp-pagination-link">‹ Precedente</a>
+          </li>
+          <li class="sp-pagination-item sp-active">
+            <a href="#" class="sp-pagination-link">1</a>
+          </li>
+          <li class="sp-pagination-item">
+            <a href="#" class="sp-pagination-link">2</a>
+          </li>
+          <li class="sp-pagination-item">
+            <a href="#" class="sp-pagination-link">3</a>
+          </li>
+          <li class="sp-pagination-item">
+            <a href="#" class="sp-pagination-link">4</a>
+          </li>
+          <li class="sp-pagination-item">
+            <a href="#" class="sp-pagination-link">5</a>
+          </li>
+          <li class="sp-pagination-item">
+            <a href="#" class="sp-pagination-link">Successivo ›</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sp-card">
+        <h3 class="sp-h3 sp-mb-md">Tabs</h3>
+        <div class="sp-tabs">
+          <ul class="sp-tabs-header">
+            <li><a href="#tab1" class="sp-tabs-link sp-active">Panoramica</a></li>
+            <li><a href="#tab2" class="sp-tabs-link">Specifiche</a></li>
+            <li><a href="#tab3" class="sp-tabs-link">Recensioni</a></li>
+          </ul>
+          <div class="sp-tabs-content">
+            <div id="tab1" class="sp-tabs-panel sp-active">
+              <p>Contenuto della tab Panoramica. Qui puoi inserire informazioni generali sul prodotto o servizio.</p>
+            </div>
+            <div id="tab2" class="sp-tabs-panel">
+              <p>Contenuto della tab Specifiche con dettagli tecnici.</p>
+            </div>
+            <div id="tab3" class="sp-tabs-panel">
+              <p>Contenuto della tab Recensioni con feedback degli utenti.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEZIONE ACCORDION -->
+  <section id="accordion" class="sp-sezione-demo sp-py-3xl">
+    <div class="sp-container">
+      <h2 class="sp-h2 sp-mb-lg">Accordion</h2>
+      
+      <div class="sp-card">
+        <div class="sp-accordion">
+          <div class="sp-accordion-item">
+            <input type="checkbox" id="acc1" class="sp-accordion-toggle">
+            <label for="acc1" class="sp-accordion-header">Cos'è il Framework Veloce?</label>
+            <div class="sp-accordion-content">
+              <div class="sp-accordion-body">
+                Veloce è un framework CSS moderno e leggero, creato per sviluppatori italiani. Utilizza naming semantico in italiano e fornisce tutti gli strumenti necessari per creare interfacce web responsive e moderne.
+              </div>
+            </div>
+          </div>
+
+          <div class="sp-accordion-item">
+            <input type="checkbox" id="acc2" class="sp-accordion-toggle">
+            <label for="acc2" class="sp-accordion-header">Come si installa?</label>
+            <div class="sp-accordion-content">
+              <div class="sp-accordion-body">
+                Semplicemente scarica il file fast.css e includilo nel tuo progetto HTML con un tag link. Non sono necessarie dipendenze JavaScript o altri file.
+              </div>
+            </div>
+          </div>
+
+          <div class="sp-accordion-item">
+            <input type="checkbox" id="acc3" class="sp-accordion-toggle">
+            <label for="acc3" class="sp-accordion-header">È compatibile con tutti i browser?</label>
+            <div class="sp-accordion-content">
+              <div class="sp-accordion-body">
+                Sì! Veloce utilizza solo CSS standard supportato da tutti i browser moderni, inclusi Chrome, Firefox, Safari, Edge e Opera. Non vengono utilizzate proprietà sperimentali.
+              </div>
+            </div>
+          </div>
+
+          <div class="sp-accordion-item">
+            <input type="checkbox" id="acc4" class="sp-accordion-toggle">
+            <label for="acc4" class="sp-accordion-header">Posso personalizzare i colori?</label>
+            <div class="sp-accordion-content">
+              <div class="sp-accordion-body">
+                Assolutamente! Veloce utilizza CSS Variables (custom properties) che puoi facilmente sovrascrivere nel tuo CSS personalizzato per adattare i colori al tuo brand.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEZIONE PROGRESS & SPINNER -->
+  <section id="progress" class="sp-sezione-demo sp-py-3xl sp-bg-gray-lighter">
+    <div class="sp-container">
+      <h2 class="sp-h2 sp-mb-lg">Barre di Progresso & Spinner</h2>
+      
+      <div class="sp-card sp-mb-xl">
+        <h3 class="sp-h3 sp-mb-md">Barre di Progresso</h3>
+        
+        <p class="sp-text-sm sp-font-semibold sp-mb-xs">Progresso Base - 25%</p>
+        <div class="sp-progress">
+          <div class="sp-progress-bar" style="width: 25%;">25%</div>
+        </div>
+
+        <p class="sp-text-sm sp-font-semibold sp-mb-xs">Successo - 60%</p>
+        <div class="sp-progress sp-progress-success">
+          <div class="sp-progress-bar" style="width: 60%;">60%</div>
+        </div>
+
+        <p class="sp-text-sm sp-font-semibold sp-mb-xs">Attenzione - 80%</p>
+        <div class="sp-progress sp-progress-warning">
+          <div class="sp-progress-bar" style="width: 80%;">80%</div>
+        </div>
+
+        <p class="sp-text-sm sp-font-semibold sp-mb-xs">Completo - 100%</p>
+        <div class="sp-progress sp-progress-success">
+          <div class="sp-progress-bar" style="width: 100%;">100%</div>
+        </div>
+
+        <p class="sp-text-sm sp-font-semibold sp-mb-xs">Barra Striata Animata</p>
+        <div class="sp-progress sp-progress-striped">
+          <div class="sp-progress-bar" style="width: 75%;"></div>
+        </div>
+      </div>
+
+      <div class="sp-card">
+        <h3 class="sp-h3 sp-mb-md">Spinner di Caricamento</h3>
+        <div class="sp-flex sp-gap-xl sp-items-center">
+          <div class="sp-text-center">
+            <div class="sp-spinner sp-spinner-sm sp-mb-sm"></div>
+            <p class="sp-text-sm">Piccolo</p>
+          </div>
+          <div class="sp-text-center">
+            <div class="sp-spinner sp-mb-sm"></div>
+            <p class="sp-text-sm">Normale</p>
+          </div>
+          <div class="sp-text-center">
+            <div class="sp-spinner sp-spinner-lg sp-mb-sm"></div>
+            <p class="sp-text-sm">Grande</p>
+          </div>
+        </div>
+        <div class="sp-flex sp-gap-xl sp-items-center sp-mt-xl">
+          <div class="sp-text-center">
+            <div class="sp-spinner sp-spinner-secondary sp-mb-sm"></div>
+            <p class="sp-text-sm">Arancio</p>
+          </div>
+          <div class="sp-text-center">
+            <div class="sp-spinner sp-spinner-success sp-mb-sm"></div>
+            <p class="sp-text-sm">Verde</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEZIONE LAYOUT -->
+  <section id="layout" class="sp-sezione-demo sp-py-3xl">
+    <div class="sp-container">
+      <h2 class="sp-h2 sp-mb-lg">Sistema Layout</h2>
+      
+      <div class="sp-card sp-mb-xl">
+        <h3 class="sp-h3 sp-mb-md">Grid System</h3>
+        <div class="sp-grid sp-grid-4 sp-gap-md sp-mb-md">
+          <div class="sp-bg-primary sp-text-white sp-p-md sp-rounded-md sp-text-center">1</div>
+          <div class="sp-bg-secondary sp-text-white sp-p-md sp-rounded-md sp-text-center">2</div>
+          <div class="sp-bg-success sp-text-white sp-p-md sp-rounded-md sp-text-center">3</div>
+          <div class="sp-bg-info sp-text-white sp-p-md sp-rounded-md sp-text-center">4</div>
+        </div>
+
+        <h4 class="sp-font-semibold sp-mb-sm sp-mt-lg">Grid con Column Span</h4>
+        <div class="sp-grid sp-grid-4 sp-gap-md">
+          <div class="sp-col-span-2 sp-bg-primary sp-text-white sp-p-md sp-rounded-md sp-text-center">Span 2</div>
+          <div class="sp-bg-secondary sp-text-white sp-p-md sp-rounded-md sp-text-center">1</div>
+          <div class="sp-bg-success sp-text-white sp-p-md sp-rounded-md sp-text-center">1</div>
+          <div class="sp-col-span-full sp-bg-info sp-text-white sp-p-md sp-rounded-md sp-text-center">Span Completo</div>
+        </div>
+      </div>
+
+      <div class="sp-card sp-mb-xl">
+        <h3 class="sp-h3 sp-mb-md">Flexbox System</h3>
+        
+        <h4 class="sp-font-semibold sp-mb-sm">Flex Center</h4>
+        <div class="sp-flex sp-justify-center sp-items-center sp-gap-md sp-bg-gray-lighter sp-p-lg sp-rounded-md sp-mb-lg" style="min-height: 100px;">
+          <div class="sp-bg-primary sp-text-white sp-p-md sp-rounded-md">Item 1</div>
+          <div class="sp-bg-secondary sp-text-white sp-p-md sp-rounded-md">Item 2</div>
+          <div class="sp-bg-success sp-text-white sp-p-md sp-rounded-md">Item 3</div>
+        </div>
+
+        <h4 class="sp-font-semibold sp-mb-sm">Flex Between</h4>
+        <div class="sp-flex sp-justify-between sp-items-center sp-gap-md sp-bg-gray-lighter sp-p-lg sp-rounded-md sp-mb-lg">
+          <div class="sp-bg-primary sp-text-white sp-p-md sp-rounded-md">Start</div>
+          <div class="sp-bg-secondary sp-text-white sp-p-md sp-rounded-md">Middle</div>
+          <div class="sp-bg-success sp-text-white sp-p-md sp-rounded-md">End</div>
+        </div>
+
+        <h4 class="sp-font-semibold sp-mb-sm">Flex Column</h4>
+        <div class="sp-flex sp-flex-col sp-gap-sm sp-bg-gray-lighter sp-p-lg sp-rounded-md">
+          <div class="sp-bg-primary sp-text-white sp-p-md sp-rounded-md">Item 1</div>
+          <div class="sp-bg-secondary sp-text-white sp-p-md sp-rounded-md">Item 2</div>
+          <div class="sp-bg-success sp-text-white sp-p-md sp-rounded-md">Item 3</div>
+        </div>
+      </div>
+
+      <div class="sp-card">
+        <h3 class="sp-h3 sp-mb-md">Grid Responsive</h3>
+        <p class="sp-mb-md">Ridimensiona la finestra per vedere il layout responsive</p>
+        <div class="sp-grid sp-grid-1 sp-md:grid-3 sp-lg:grid-4 sp-gap-md">
+          <div class="sp-card sp-bg-primary sp-text-white">
+            <p class="sp-font-semibold">1 colonna su mobile</p>
+            <p class="sp-text-sm">3 su tablet, 4 su desktop</p>
+          </div>
+          <div class="sp-card sp-bg-secondary sp-text-white">
+            <p class="sp-font-semibold">Responsive</p>
+            <p class="sp-text-sm">Automatico</p>
+          </div>
+          <div class="sp-card sp-bg-success sp-text-white">
+            <p class="sp-font-semibold">Layout</p>
+            <p class="sp-text-sm">Fluido</p>
+          </div>
+          <div class="sp-card sp-bg-info sp-text-white">
+            <p class="sp-font-semibold">Design</p>
+            <p class="sp-text-sm">Mobile-First</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sp-card sp-mb-xl">
+        <h3 class="sp-h3 sp-mb-md">Orientamento e Schermi TV</h3>
+        <div class="sp-grid sp-grid-1 sp-md:grid-2 sp-gap-md">
+          <div class="sp-card sp-bg-gray-lighter">
+            <p class="sp-font-semibold sp-mb-sm">Portrait vs Landscape</p>
+            <div class="sp-portrait:block sp-landscape:hidden sp-bg-primary sp-text-white sp-p-md sp-rounded-md sp-text-center">Solo Portrait</div>
+            <div class="sp-portrait:hidden sp-landscape:block sp-bg-secondary sp-text-white sp-p-md sp-rounded-md sp-text-center">Solo Landscape</div>
+          </div>
+          <div class="sp-card sp-bg-gray-lighter">
+            <p class="sp-font-semibold sp-mb-sm">TV / Schermi grandi</p>
+            <div class="sp-grid sp-grid-2 sp-tv:grid-6 sp-gap-sm">
+              <div class="sp-bg-primary sp-text-white sp-p-sm sp-rounded-sm sp-text-center">1</div>
+              <div class="sp-bg-secondary sp-text-white sp-p-sm sp-rounded-sm sp-text-center">2</div>
+              <div class="sp-bg-success sp-text-white sp-p-sm sp-rounded-sm sp-text-center">3</div>
+              <div class="sp-bg-info sp-text-white sp-p-sm sp-rounded-sm sp-text-center">4</div>
+              <div class="sp-bg-warning sp-text-white sp-p-sm sp-rounded-sm sp-text-center">5</div>
+              <div class="sp-bg-gray-dark sp-text-white sp-p-sm sp-rounded-sm sp-text-center">6</div>
+            </div>
+            <p class="sp-text-sm sp-mt-sm">Su TV passa a 6 colonne con <code>sp-tv:grid-6</code></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEZIONE ICONE -->
+  <section id="icone" class="sp-sezione-demo sp-py-3xl sp-bg-gray-lighter">
+    <div class="sp-container">
+      <h2 class="sp-h2 sp-mb-lg">Icone SVG Personalizzate</h2>
+      
+      <div class="sp-card">
+        <h3 class="sp-h3 sp-mb-md">Set Icone Integrate</h3>
+        <p class="sp-mb-xl">Veloce include un set di icone SVG integrate nel CSS, pronte all'uso senza file esterni.</p>
+        
+        <div class="sp-grid sp-grid-2 sp-md:grid-4 sp-lg:grid-5 sp-xl:grid-6 sp-gap-lg">
+          <div class="sp-text-center">
+            <span class="sp-icon sp-icon-lg sp-icon-home sp-text-primary sp-mb-sm"></span>
+            <p class="sp-text-sm">Casa</p>
+          </div>
+          <div class="sp-text-center">
+            <span class="sp-icon sp-icon-lg sp-icon-user sp-text-primary sp-mb-sm"></span>
+            <p class="sp-text-sm">Utente</p>
+          </div>
+          <div class="sp-text-center">
+            <span class="sp-icon sp-icon-lg sp-icon-email sp-text-primary sp-mb-sm"></span>
+            <p class="sp-text-sm">Email</p>
+          </div>
+          <div class="sp-text-center">
+            <span class="sp-icon sp-icon-lg sp-icon-settings sp-text-primary sp-mb-sm"></span>
+            <p class="sp-text-sm">Impostazioni</p>
+          </div>
+          <div class="sp-text-center">
+            <span class="sp-icon sp-icon-lg sp-icon-search sp-text-primary sp-mb-sm"></span>
+            <p class="sp-text-sm">Cerca</p>
+          </div>
+          <div class="sp-text-center">
+            <span class="sp-icon sp-icon-lg sp-icon-menu sp-text-primary sp-mb-sm"></span>
+            <p class="sp-text-sm">Menu</p>
+          </div>
+          <div class="sp-text-center">
+            <span class="sp-icon sp-icon-lg sp-icon-close sp-text-danger sp-mb-sm"></span>
+            <p class="sp-text-sm">Chiudi</p>
+          </div>
+          <div class="sp-text-center">
+            <span class="sp-icon sp-icon-lg sp-icon-heart sp-text-danger sp-mb-sm"></span>
+            <p class="sp-text-sm">Cuore</p>
+          </div>
+          <div class="sp-text-center">
+            <span class="sp-icon sp-icon-lg sp-icon-star sp-text-warning sp-mb-sm"></span>
+            <p class="sp-text-sm">Stella</p>
+          </div>
+          <div class="sp-text-center">
+            <span class="sp-icon sp-icon-lg sp-icon-check sp-text-success sp-mb-sm"></span>
+            <p class="sp-text-sm">Check</p>
+          </div>
+          <div class="sp-text-center">
+            <span class="sp-icon sp-icon-lg sp-icon-info sp-text-primary sp-mb-sm"></span>
+            <p class="sp-text-sm">Info</p>
+          </div>
+          <div class="sp-text-center">
+            <span class="sp-icon sp-icon-lg sp-icon-warning sp-text-secondary sp-mb-sm"></span>
+            <p class="sp-text-sm">Avvertimento</p>
+          </div>
+          <div class="sp-text-center">
+            <span class="sp-icon sp-icon-lg sp-icon-cart sp-text-info sp-mb-sm"></span>
+            <p class="sp-text-sm">Carrello</p>
+          </div>
+          <div class="sp-text-center">
+            <span class="sp-icon sp-icon-lg sp-icon-download sp-text-success sp-mb-sm"></span>
+            <p class="sp-text-sm">Download</p>
+          </div>
+        </div>
+
+        <h4 class="sp-h4 sp-mt-2xl sp-mb-md">Dimensioni Icone</h4>
+        <div class="sp-flex sp-gap-xl sp-items-center">
+          <div class="sp-text-center">
+            <span class="sp-icon sp-icon-sm sp-icon-heart sp-text-danger sp-mb-sm"></span>
+            <p class="sp-text-sm">Piccola</p>
+          </div>
+          <div class="sp-text-center">
+            <span class="sp-icon sp-icon-home sp-text-primary sp-mb-sm"></span>
+            <p class="sp-text-sm">Normale</p>
+          </div>
+          <div class="sp-text-center">
+            <span class="sp-icon sp-icon-md sp-icon-star sp-text-warning sp-mb-sm"></span>
+            <p class="sp-text-sm">Media</p>
+          </div>
+          <div class="sp-text-center">
+            <span class="sp-icon sp-icon-lg sp-icon-check sp-text-success sp-mb-sm"></span>
+            <p class="sp-text-sm">Grande</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEZIONE ANIMAZIONI -->
+  <section id="animazioni" class="sp-sezione-demo sp-py-3xl">
+    <div class="sp-container">
+      <h2 class="sp-h2 sp-mb-lg">Animazioni CSS Pure</h2>
+      
+      <div class="sp-card sp-mb-xl">
+        <h3 class="sp-h3 sp-mb-md">Animazioni di Entrata</h3>
+        <div class="sp-grid sp-grid-1 sp-md:grid-3 sp-gap-md">
+          <div class="sp-card sp-bg-primary sp-text-white sp-animate-fade-in">
+            <p class="sp-font-bold">Dissolvenza Entrata</p>
+            <p class="sp-text-sm">Fade In effect</p>
+          </div>
+          <div class="sp-card sp-bg-secondary sp-text-white sp-animate-slide-up" style="animation-delay: 0.2s;">
+            <p class="sp-font-bold">Scivola Alto</p>
+            <p class="sp-text-sm">Slide Up effect</p>
+          </div>
+          <div class="sp-card sp-bg-success sp-text-white sp-animate-scale-in" style="animation-delay: 0.4s;">
+            <p class="sp-font-bold">Scala Entrata</p>
+            <p class="sp-text-sm">Scale In effect</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sp-card sp-mb-xl">
+        <h3 class="sp-h3 sp-mb-md">Animazioni Continue</h3>
+        <div class="sp-flex sp-flex-wrap sp-gap-lg sp-justify-center">
+          <div class="sp-card sp-bg-info sp-text-white sp-animate-pulse sp-w-25 sp-text-center">
+            <p class="sp-font-bold">Pulsazione</p>
+          </div>
+          <div class="sp-card sp-text-white sp-animate-bounce sp-w-25 sp-text-center" style="background-color: var(--color-pink);">
+            <p class="sp-font-bold">Rimbalzo</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sp-card">
+        <h3 class="sp-h3 sp-mb-md">Effetti Hover</h3>
+        <div class="sp-grid sp-grid-1 sp-md:grid-3 sp-gap-md">
+          <div class="sp-card sp-bg-primary sp-text-white sp-hover-lift sp-text-center sp-cursor-pointer">
+            <p class="sp-font-bold">Hover: Solleva</p>
+            <p class="sp-text-sm">Passa il mouse sopra</p>
+          </div>
+          <div class="sp-card sp-bg-secondary sp-text-white sp-hover-grow sp-text-center sp-cursor-pointer">
+            <p class="sp-font-bold">Hover: Cresce</p>
+            <p class="sp-text-sm">Passa il mouse sopra</p>
+          </div>
+          <div class="sp-card sp-bg-success sp-text-white sp-hover-rotate sp-text-center sp-cursor-pointer">
+            <p class="sp-font-bold">Hover: Ruota</p>
+            <p class="sp-text-sm">Passa il mouse sopra</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEZIONE UTILITIES -->
+  <section id="utilities" class="sp-sezione-demo sp-py-3xl sp-bg-gray-lighter">
+    <div class="sp-container">
+      <h2 class="sp-h2 sp-mb-lg">Classi Utility</h2>
+      
+      <div class="sp-grid sp-grid-1 sp-md:grid-2 sp-gap-lg">
+        
+        <div class="sp-card">
+          <h3 class="sp-h3 sp-mb-md">Ombre</h3>
+          <div class="sp-mb-md sp-p-md sp-bg-white sp-shadow-sm">Ombra Piccola</div>
+          <div class="sp-mb-md sp-p-md sp-bg-white sp-shadow-md">Ombra Media</div>
+          <div class="sp-mb-md sp-p-md sp-bg-white sp-shadow-lg">Ombra Grande</div>
+          <div class="sp-p-md sp-bg-white sp-shadow-xl">Ombra Molto Grande</div>
+        </div>
+
+        <div class="sp-card">
+          <h3 class="sp-h3 sp-mb-md">Arrotondamenti</h3>
+          <div class="sp-mb-md sp-p-md sp-bg-primary sp-text-white sp-rounded-xs">Extra Small</div>
+          <div class="sp-mb-md sp-p-md sp-bg-secondary sp-text-white sp-rounded-sm">Small</div>
+          <div class="sp-mb-md sp-p-md sp-bg-success sp-text-white sp-rounded-md">Medium</div>
+          <div class="sp-mb-md sp-p-md sp-bg-info sp-text-white sp-rounded-lg">Large</div>
+          <div class="sp-p-md sp-text-white sp-rounded-full sp-text-center" style="background-color: var(--color-pink);">Pieno</div>
+        </div>
+
+        <div class="sp-card">
+          <h3 class="sp-h3 sp-mb-md">Opacità</h3>
+          <div class="sp-grid sp-grid-5 sp-gap-sm">
+            <div class="sp-bg-primary sp-p-md sp-rounded-md sp-opacity-100" style="height: 60px;"></div>
+            <div class="sp-bg-primary sp-p-md sp-rounded-md sp-opacity-75" style="height: 60px;"></div>
+            <div class="sp-bg-primary sp-p-md sp-rounded-md sp-opacity-50" style="height: 60px;"></div>
+            <div class="sp-bg-primary sp-p-md sp-rounded-md sp-opacity-25" style="height: 60px;"></div>
+            <div class="sp-bg-primary sp-p-md sp-rounded-md sp-opacity-0" style="height: 60px; border: 1px dashed var(--color-primary);"></div>
+          </div>
+          <div class="sp-flex sp-justify-between sp-mt-sm sp-text-xs sp-text-gray">
+            <span>100%</span>
+            <span>75%</span>
+            <span>50%</span>
+            <span>25%</span>
+            <span>0%</span>
+          </div>
+        </div>
+
+        <div class="sp-card">
+          <h3 class="sp-h3 sp-mb-md">Tooltips</h3>
+          <p class="sp-mb-md">
+            Passa il mouse sopra gli elementi per vedere i tooltip:
+          </p>
+          <div class="sp-flex sp-flex-wrap sp-gap-md">
+            <button class="sp-btn sp-btn-primary" data-tooltip="Questo è un tooltip!">
+              Hover su di me
+            </button>
+            <button class="sp-btn sp-btn-secondary" data-tooltip="Informazioni aggiuntive">
+              Info Tooltip
+            </button>
+            <button class="sp-btn sp-btn-success" data-tooltip="Aiuto contestuale">
+              Aiuto
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL ESEMPIO -->
+  <div id="modale-esempio" class="sp-modal">
+    <div class="sp-modal-content">
+      <div class="sp-modal-header">
+        <h3 class="sp-modal-title">Titolo Modale</h3>
+        <a href="#" class="sp-modal-close">×</a>
+      </div>
+      <div class="sp-modal-body">
+        <p>Questo è un esempio di modale creato con CSS puro usando :target selector.</p>
+        <p class="sp-mt-md">Le modali sono utili per mostrare contenuto importante senza lasciare la pagina corrente.</p>
+      </div>
+      <div class="sp-modal-footer">
+        <a href="#" class="sp-btn sp-btn-outline">Annulla</a>
+        <button class="sp-btn sp-btn-primary">Conferma</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEZIONE ESEMPI PRATICI -->
+  <section id="esempi" class="sp-sezione-demo sp-py-3xl">
+    <div class="sp-container">
+      <h2 class="sp-h2 sp-mb-lg sp-text-center">Esempi Pratici</h2>
+      
+      <!-- Esempio Dashboard -->
+      <div class="sp-card sp-mb-xl">
+        <h3 class="sp-h3 sp-mb-md">Dashboard Layout</h3>
+        <div class="sp-grid sp-grid-1 sp-lg:grid-4 sp-gap-md">
+          <div class="sp-lg:col-span-1">
+            <div class="sp-card sp-bg-gray-dark sp-text-white">
+              <h4 class="sp-font-semibold sp-mb-md">Sidebar</h4>
+              <ul class="sp-flex sp-flex-col sp-gap-sm">
+                <li><a href="#" class="sp-text-white">Dashboard</a></li>
+                <li><a href="#" class="sp-text-gray-light">Utenti</a></li>
+                <li><a href="#" class="sp-text-gray-light">Impostazioni</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="sp-lg:col-span-3">
+            <div class="sp-grid sp-grid-1 sp-md:grid-2 sp-gap-md">
+              <div class="sp-card sp-bg-primary sp-text-white">
+                <p class="sp-text-sm sp-mb-xs">Totale Utenti</p>
+                <p class="sp-text-4xl sp-font-bold">1,234</p>
+              </div>
+              <div class="sp-card sp-bg-success sp-text-white">
+                <p class="sp-text-sm sp-mb-xs">Vendite Oggi</p>
+                <p class="sp-text-4xl sp-font-bold">€5,678</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Esempio Pricing -->
+      <div class="sp-card sp-mb-xl">
+        <h3 class="sp-h3 sp-mb-lg sp-text-center">Pricing Cards</h3>
+        <div class="sp-grid sp-grid-1 sp-md:grid-3 sp-gap-lg">
+          
+          <div class="sp-card sp-border sp-hover-lift">
+            <h4 class="sp-text-2xl sp-font-bold sp-mb-sm">Base</h4>
+            <p class="sp-text-gray sp-mb-lg">Per iniziare</p>
+            <div class="sp-mb-lg">
+              <span class="sp-text-5xl sp-font-bold">€9</span>
+              <span class="sp-text-gray">/mese</span>
+            </div>
+            <ul class="sp-mb-lg">
+              <li class="sp-mb-sm">✓ 10 Progetti</li>
+              <li class="sp-mb-sm">✓ 5GB Storage</li>
+              <li class="sp-mb-sm">✓ Supporto Base</li>
+            </ul>
+            <button class="sp-btn sp-btn-outline sp-btn-block">Scegli Piano</button>
+          </div>
+
+          <div class="sp-card sp-bg-primary sp-text-white sp-hover-grow" style="transform: scale(1.05);">
+            <div class="sp-badge sp-bg-secondary sp-mb-md">Popolare</div>
+            <h4 class="sp-text-2xl sp-font-bold sp-mb-sm">Pro</h4>
+            <p class="sp-mb-lg" style="opacity: 0.9;">Per professionisti</p>
+            <div class="sp-mb-lg">
+              <span class="sp-text-5xl sp-font-bold">€29</span>
+              <span style="opacity: 0.9;">/mese</span>
+            </div>
+            <ul class="sp-mb-lg">
+              <li class="sp-mb-sm">✓ Progetti Illimitati</li>
+              <li class="sp-mb-sm">✓ 50GB Storage</li>
+              <li class="sp-mb-sm">✓ Supporto Priority</li>
+              <li class="sp-mb-sm">✓ Analytics Avanzate</li>
+            </ul>
+            <button class="sp-btn sp-bg-white sp-text-primary sp-btn-block">Scegli Piano</button>
+          </div>
+
+          <div class="sp-card sp-border sp-hover-lift">
+            <h4 class="sp-text-2xl sp-font-bold sp-mb-sm">Enterprise</h4>
+            <p class="sp-text-gray sp-mb-lg">Per aziende</p>
+            <div class="sp-mb-lg">
+              <span class="sp-text-5xl sp-font-bold">€99</span>
+              <span class="sp-text-gray">/mese</span>
+            </div>
+            <ul class="sp-mb-lg">
+              <li class="sp-mb-sm">✓ Tutto di Pro</li>
+              <li class="sp-mb-sm">✓ Storage Illimitato</li>
+              <li class="sp-mb-sm">✓ Supporto Dedicato</li>
+              <li class="sp-mb-sm">✓ Custom Integrations</li>
+            </ul>
+            <button class="sp-btn sp-btn-primary sp-btn-block">Contattaci</button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Pulsante Modal -->
+      <div class="sp-card sp-text-center">
+        <h3 class="sp-h3 sp-mb-md">Modal CSS Puro</h3>
+        <p class="sp-mb-lg">Clicca il bottone per aprire una modale creata solo con CSS</p>
+        <a href="#modale-esempio" class="sp-btn sp-btn-lg sp-btn-primary">
+          Apri Modale
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="sp-bg-gray-dark sp-text-white sp-py-3xl">
+    <div class="sp-container">
+      <div class="sp-grid sp-grid-1 sp-md:grid-4 sp-gap-xl sp-mb-2xl">
+        
+        <div>
+          <h4 class="sp-text-xl sp-font-bold sp-mb-md">
+            <span class="sp-icon sp-icon-md sp-icon-home" style="vertical-align: middle;"></span>
+            Veloce Framework
+          </h4>
+          <p class="sp-text-gray-light">Un framework CSS moderno per sviluppatori italiani. 100% CSS puro, veloce e semantico.</p>
+        </div>
+
+        <div>
+          <h5 class="sp-font-bold sp-mb-md">Risorse</h5>
+          <ul class="sp-flex sp-flex-col sp-gap-sm">
+            <li><a href="#" class="sp-text-gray-light sp-hover-lift sp-transition">Documentazione</a></li>
+            <li><a href="#" class="sp-text-gray-light sp-hover-lift sp-transition">Esempi</a></li>
+            <li><a href="#" class="sp-text-gray-light sp-hover-lift sp-transition">GitHub</a></li>
+            <li><a href="#" class="sp-text-gray-light sp-hover-lift sp-transition">Changelog</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="sp-font-bold sp-mb-md">Comunità</h5>
+          <ul class="sp-flex sp-flex-col sp-gap-sm">
+            <li><a href="#" class="sp-text-gray-light sp-hover-lift sp-transition">Forum</a></li>
+            <li><a href="#" class="sp-text-gray-light sp-hover-lift sp-transition">Twitter</a></li>
+            <li><a href="#" class="sp-text-gray-light sp-hover-lift sp-transition">Discord</a></li>
+            <li><a href="#" class="sp-text-gray-light sp-hover-lift sp-transition">Newsletter</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="sp-font-bold sp-mb-md">Legale</h5>
+          <ul class="sp-flex sp-flex-col sp-gap-sm">
+            <li><a href="#" class="sp-text-gray-light sp-hover-lift sp-transition">Licenza MIT</a></li>
+            <li><a href="#" class="sp-text-gray-light sp-hover-lift sp-transition">Privacy</a></li>
+            <li><a href="#" class="sp-text-gray-light sp-hover-lift sp-transition">Termini</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="sp-border-t sp-py-lg sp-text-center">
+        <p class="sp-text-gray-light">
+          © 2026 Veloce Framework. Creato da Leonardo Bruni web designer
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
