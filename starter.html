@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starter - Veloce (sp-)</title>
+  <link rel="stylesheet" href="fast.css">
+</head>
+<body>
+
+  <nav class="sp-navbar sp-navbar-sticky sp-bg-white">
+    <a href="#" class="sp-navbar-brand">Veloce</a>
+    <input class="sp-nav-toggle" type="checkbox" id="starter-toggle">
+    <label class="sp-nav-toggle-label" for="starter-toggle" aria-label="Apri menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <ul class="sp-navbar-menu sp-navbar-menu--full">
+      <li><a href="#features" class="sp-navbar-link">Features</a></li>
+      <li><a href="#components" class="sp-navbar-link">Componenti</a></li>
+      <li><a href="#form" class="sp-navbar-link">Form</a></li>
+      <li><a href="#footer" class="sp-navbar-link">Footer</a></li>
+    </ul>
+  </nav>
+
+  <header class="sp-py-4xl sp-bg-gray-lighter">
+    <div class="sp-container">
+      <h1 class="sp-h1 sp-mb-md">Starter Template</h1>
+      <p class="sp-text-lg sp-text-gray sp-mb-xl">Esempio base per usare <code>fast.css</code> con prefisso <code>sp-</code>.</p>
+      <div class="sp-btn-group">
+        <a class="sp-btn sp-btn-primary" href="#components">Vedi componenti</a>
+        <a class="sp-btn sp-btn-outline" href="#form">Vai al form</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="features" class="sp-py-3xl">
+    <div class="sp-container">
+      <h2 class="sp-h2 sp-mb-lg">Features</h2>
+      <div class="sp-grid sp-grid-1 sp-md:grid-3 sp-gap-lg">
+        <div class="sp-card sp-hover-lift">
+          <h3 class="sp-card-title">Mobile First</h3>
+          <p>Layout responsive per mobile, tablet e TV.</p>
+        </div>
+        <div class="sp-card sp-hover-lift">
+          <h3 class="sp-card-title">Utilities</h3>
+          <p>Spaziature, griglie, colori e tipografia pronti.</p>
+        </div>
+        <div class="sp-card sp-hover-lift">
+          <h3 class="sp-card-title">Zero JS</h3>
+          <p>Componenti in puro CSS (modale, accordion, tooltip).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="components" class="sp-py-3xl sp-bg-gray-lighter">
+    <div class="sp-container">
+      <h2 class="sp-h2 sp-mb-lg">Componenti</h2>
+
+      <div class="sp-card sp-mb-xl">
+        <h3 class="sp-h3 sp-mb-md">Buttons</h3>
+        <div class="sp-btn-group">
+          <button class="sp-btn sp-btn-primary">Primary</button>
+          <button class="sp-btn sp-btn-secondary">Secondary</button>
+          <button class="sp-btn sp-btn-success">Success</button>
+          <button class="sp-btn sp-btn-outline">Outline</button>
+        </div>
+      </div>
+
+      <div class="sp-card">
+        <h3 class="sp-h3 sp-mb-md">Cards</h3>
+        <div class="sp-grid sp-grid-1 sp-md:grid-2 sp-gap-lg">
+          <div class="sp-card sp-border">
+            <h4 class="sp-card-title">Card Base</h4>
+            <p>Testo descrittivo della card.</p>
+            <button class="sp-btn sp-btn-primary sp-mt-md">Azione</button>
+          </div>
+          <div class="sp-card sp-card-primary">
+            <h4 class="sp-card-title">Card Colorata</h4>
+            <p>Card con sfondo colorato.</p>
+            <button class="sp-btn sp-bg-white sp-text-primary sp-mt-md">Dettagli</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="pricing" class="sp-py-3xl">
+    <div class="sp-container">
+      <h2 class="sp-h2 sp-mb-lg">Pricing</h2>
+      <div class="sp-grid sp-grid-1 sp-md:grid-3 sp-gap-lg">
+        <div class="sp-card sp-border">
+          <h4 class="sp-text-2xl sp-font-bold sp-mb-sm">Base</h4>
+          <p class="sp-text-gray sp-mb-lg">Per iniziare</p>
+          <div class="sp-mb-lg">
+            <span class="sp-text-5xl sp-font-bold">€9</span>
+            <span class="sp-text-gray">/mese</span>
+          </div>
+          <ul class="sp-mb-lg">
+            <li class="sp-mb-sm">✓ 10 Progetti</li>
+            <li class="sp-mb-sm">✓ 5GB Storage</li>
+            <li class="sp-mb-sm">✓ Supporto Base</li>
+          </ul>
+          <button class="sp-btn sp-btn-outline sp-btn-block">Scegli Piano</button>
+        </div>
+
+        <div class="sp-card sp-bg-primary sp-text-white sp-hover-grow" style="transform: scale(1.03);">
+          <div class="sp-badge sp-bg-secondary sp-mb-md">Popolare</div>
+          <h4 class="sp-text-2xl sp-font-bold sp-mb-sm">Pro</h4>
+          <p class="sp-mb-lg" style="opacity: 0.9;">Per professionisti</p>
+          <div class="sp-mb-lg">
+            <span class="sp-text-5xl sp-font-bold">€29</span>
+            <span style="opacity: 0.9;">/mese</span>
+          </div>
+          <ul class="sp-mb-lg">
+            <li class="sp-mb-sm">✓ Progetti Illimitati</li>
+            <li class="sp-mb-sm">✓ 50GB Storage</li>
+            <li class="sp-mb-sm">✓ Supporto Priority</li>
+          </ul>
+          <button class="sp-btn sp-bg-white sp-text-primary sp-btn-block">Scegli Piano</button>
+        </div>
+
+        <div class="sp-card sp-border">
+          <h4 class="sp-text-2xl sp-font-bold sp-mb-sm">Enterprise</h4>
+          <p class="sp-text-gray sp-mb-lg">Per aziende</p>
+          <div class="sp-mb-lg">
+            <span class="sp-text-5xl sp-font-bold">€99</span>
+            <span class="sp-text-gray">/mese</span>
+          </div>
+          <ul class="sp-mb-lg">
+            <li class="sp-mb-sm">✓ Tutto di Pro</li>
+            <li class="sp-mb-sm">✓ Storage Illimitato</li>
+            <li class="sp-mb-sm">✓ Supporto Dedicato</li>
+          </ul>
+          <button class="sp-btn sp-btn-primary sp-btn-block">Contattaci</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="accordion" class="sp-py-3xl sp-bg-gray-lighter">
+    <div class="sp-container">
+      <h2 class="sp-h2 sp-mb-lg">Accordion</h2>
+      <div class="sp-accordion">
+        <div class="sp-accordion-item">
+          <input type="checkbox" id="acc-1" class="sp-accordion-toggle">
+          <label for="acc-1" class="sp-accordion-header">Domanda 1</label>
+          <div class="sp-accordion-content">
+            <div class="sp-accordion-body">
+              Risposta esempio per il contenuto dell'accordion.
+            </div>
+          </div>
+        </div>
+        <div class="sp-accordion-item">
+          <input type="checkbox" id="acc-2" class="sp-accordion-toggle">
+          <label for="acc-2" class="sp-accordion-header">Domanda 2</label>
+          <div class="sp-accordion-content">
+            <div class="sp-accordion-body">
+              Altro contenuto testuale dell'accordion.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="table" class="sp-py-3xl">
+    <div class="sp-container">
+      <h2 class="sp-h2 sp-mb-lg">Tabella</h2>
+      <table class="sp-table sp-table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Cliente</th>
+            <th>Prodotto</th>
+            <th>Importo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1001</td>
+            <td>Mario Rossi</td>
+            <td>Abbonamento Pro</td>
+            <td>€29</td>
+          </tr>
+          <tr>
+            <td>1002</td>
+            <td>Giulia Bianchi</td>
+            <td>Setup Starter</td>
+            <td>€9</td>
+          </tr>
+          <tr>
+            <td>1003</td>
+            <td>Luca Verdi</td>
+            <td>Supporto</td>
+            <td>€49</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="modal" class="sp-py-3xl sp-bg-gray-lighter">
+    <div class="sp-container">
+      <h2 class="sp-h2 sp-mb-lg">Modal</h2>
+      <a href="#starter-modal" class="sp-btn sp-btn-primary">Apri Modale</a>
+    </div>
+  </section>
+
+  <div id="starter-modal" class="sp-modal">
+    <div class="sp-modal-content">
+      <div class="sp-modal-header">
+        <h3 class="sp-modal-title">Titolo Modale</h3>
+        <a href="#" class="sp-modal-close">×</a>
+      </div>
+      <div class="sp-modal-body">
+        <p>Questa è una modale in puro CSS.</p>
+      </div>
+      <div class="sp-modal-footer">
+        <a href="#" class="sp-btn sp-btn-outline">Chiudi</a>
+        <button class="sp-btn sp-btn-primary">Conferma</button>
+      </div>
+    </div>
+  </div>
+
+  <section id="form" class="sp-py-3xl">
+    <div class="sp-container">
+      <h2 class="sp-h2 sp-mb-lg">Form</h2>
+      <div class="sp-card">
+        <div class="sp-form-group">
+          <label class="sp-form-label" for="starter-nome">Nome</label>
+          <input id="starter-nome" class="sp-form-control" type="text" placeholder="Inserisci nome">
+        </div>
+        <div class="sp-form-group">
+          <label class="sp-form-label" for="starter-email">Email</label>
+          <input id="starter-email" class="sp-form-control" type="email" placeholder="email@esempio.com">
+        </div>
+        <div class="sp-form-group">
+          <label class="sp-form-label" for="starter-messaggio">Messaggio</label>
+          <textarea id="starter-messaggio" class="sp-form-control" placeholder="Scrivi qui..."></textarea>
+        </div>
+        <button class="sp-btn sp-btn-primary">Invia</button>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="sp-bg-gray-dark sp-text-white sp-py-3xl">
+    <div class="sp-container">
+      <div class="sp-text-center">
+        <p class="sp-text-gray-light">Creato da Leonardo Bruni web designer</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
