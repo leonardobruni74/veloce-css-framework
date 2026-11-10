@@ -1,6 +1,6 @@
-# 🚀 Veloce CSS Framework v2.0.0
+# 🚀 Veloce CSS Framework v2.0.0-alpha.1
 
-![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)
+![Version](https://img.shields.io/badge/version-2.0.0--alpha.1-orange.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![CSS](https://img.shields.io/badge/100%25-CSS_Puro-orange.svg)
 
