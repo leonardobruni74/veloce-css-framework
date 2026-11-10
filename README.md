@@ -6,6 +6,8 @@
 
 **Veloce** è un framework CSS moderno con documentazione in italiano, creato per chi vuole classi semantiche e intuitive. 100% CSS puro, senza JavaScript, con alta compatibilità browser.
 
+> **Stato: Alpha.** Il framework è in fase iniziale: classi e componenti potrebbero cambiare nelle prossime versioni.
+
 ## ✨ Caratteristiche Principali
 
 - ✅ **100% CSS Puro** - Zero dipendenze JavaScript
