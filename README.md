@@ -656,12 +656,15 @@ Puoi facilmente personalizzare Veloce sovrascrivendo le CSS Variables:
 
 ## 🌐 Compatibilità Browser
 
-Veloce è compatibile con:
-- ✅ Chrome (ultime 2 versioni)
-- ✅ Firefox (ultime 2 versioni)
-- ✅ Safari (ultime 2 versioni)
-- ✅ Edge (ultime 2 versioni)
-- ✅ Opera (ultime 2 versioni)
+Le versioni minime indicative per il supporto delle principali funzionalità CSS del framework sono:
+
+- ✅ Chrome 57+
+- ✅ Firefox 53+
+- ✅ Safari 10.1+
+- ✅ Microsoft Edge 79+
+- ✅ Opera 44+
+
+Questi riferimenti considerano CSS Grid e le icone SVG create con CSS mask. Le icone possono non apparire correttamente nei browser più vecchi; le versioni indicate sono stime basate sui dati di compatibilità CSS e non sono state verificate con test automatici.
 
 ## 📄 Licenza
 
