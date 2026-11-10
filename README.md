@@ -684,7 +684,7 @@ I contributi sono benvenuti! Se vuoi contribuire:
 
 ---
 
-**Creato con ❤️ per la comunità italiana di sviluppatori web**
+
 
 *Veloce - Il framework CSS che parla italiano*
 
